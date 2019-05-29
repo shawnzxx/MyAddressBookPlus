@@ -7,3 +7,6 @@ MyAddressBookPlus/bin/
 MyAddressBookPlus/obj/Debug/
 MyAddressBookPlus.Data/obj/Debug/
 MyAddressBookPlus.Data/bin/Debug/
+MyAddressBookPlus/obj/Release/Package/
+MyAddressBookPlus/obj/Release/MyAddressBookPlus.csproj.CopyComplete
+MyAddressBookPlus/obj/

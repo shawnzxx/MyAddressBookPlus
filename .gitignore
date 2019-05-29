@@ -1,0 +1,9 @@
+.vs/
+packages/
+MyAddressBook+/bin/
+MyAddressBook+/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+MyAddressBook+/obj/Debug/
+MyAddressBookPlus/bin/
+MyAddressBookPlus/obj/Debug/
+MyAddressBookPlus.Data/obj/Debug/
+MyAddressBookPlus.Data/bin/Debug/

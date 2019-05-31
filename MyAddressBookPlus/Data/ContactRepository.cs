@@ -17,7 +17,7 @@ namespace MyAddressBookPlus.Data
         {
             var connectionstring = ConfigurationManager.ConnectionStrings["SqlDataConnection"].ConnectionString;
 
-            var accessToken = (new AzureServiceTokenProvider()).GetAccessTokenAsync("https://database.windows.net").Result;
+            var accessToken = (new AzureServiceTokenProvider()).GetAccessTokenAsync("https://database.windows.net/").Result;
 
             db = new SqlConnection() {
                 AccessToken = accessToken,

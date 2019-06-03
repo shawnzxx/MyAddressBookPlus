@@ -39,7 +39,7 @@ namespace MyAddressBookPlus.Data
             parameter.Add("@Picturename", contact.PictureName, DbType.String, ParameterDirection.Input);
             parameter.Add("@SIN_Number", contact.SIN_Number, DbType.String, ParameterDirection.Input, 9);
 
-            var id = this.db.Query<int>(sql, contact).Single();
+            var id = this.db.Query<int>(sql, parameter).Single();
             contact.Id = id;
             return id;
         }

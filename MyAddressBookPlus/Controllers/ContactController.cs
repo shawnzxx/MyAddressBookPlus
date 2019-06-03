@@ -9,6 +9,16 @@ namespace MyAddressBookPlus.Controllers
 {
     public class ContactController : Controller
     {
+        [Route("test")]
+        [HttpGet]
+        public ActionResult Test()
+        {
+            return new ContentResult()
+            {
+                Content = "test"
+            };
+
+        }
         /// <summary>
         /// Default action which shows a list of all contacts
         /// </summary>
@@ -25,7 +35,8 @@ namespace MyAddressBookPlus.Controllers
                 Name = c.Name,
                 Phone = c.Phone,
                 Email = c.Email,
-                Address = c.Address
+                Address = c.Address,
+                SIN_Number = c.SIN_Number
             });
 
             return View(viewModel);
@@ -74,7 +85,8 @@ namespace MyAddressBookPlus.Controllers
                 Address = model.Address,
                 Email = model.Email,
                 Phone = model.Phone,
-                PictureName = pictureFilename
+                PictureName = pictureFilename,
+                SIN_Number = model.SIN_Number
             });
 
             return RedirectToAction("index");
@@ -99,6 +111,7 @@ namespace MyAddressBookPlus.Controllers
                 Phone = contact.Phone,
                 Email = contact.Email,
                 Address = contact.Address,
+                SIN_Number = contact.SIN_Number,
                 PictureName = string.IsNullOrEmpty(contact.PictureName) ? null : $"{photoContainerUrl}{contact.PictureName}"
             });
         }

@@ -14,5 +14,6 @@ namespace MyAddressBookPlus.Models
         public string Phone { get; set; }
         public string Address { get; set; }
         public string PictureName { get; set; }
+        public string SIN_Number { get; set; }
     }
 }
